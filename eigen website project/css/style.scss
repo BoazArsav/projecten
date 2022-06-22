@@ -1,0 +1,80 @@
+@import 'nav';
+@import 'texts';
+@import 'footer';
+@import 'bars';
+@import 'error';
+$font-stack: 'Montserrat', sans-serif;
+$text-colour: rgb(120, 175, 212);
+$navcolor: #aa0404;
+$navactive: rgb(87, 18, 18);
+
+* {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+h1 {
+ color: $text-colour;
+ margin-left: 10%;
+ margin-right: 10%;
+}
+
+h2 {
+  padding-bottom: 15px;
+  color: $text-colour
+}
+
+p {
+  color: $text-colour;
+  font-size: 1em;
+}
+
+.body1{
+position: relative;
+  background-color: rgb(32, 32, 32);
+  font-family: $font-stack;  
+
+  li {
+    padding: 10px;
+  
+    a {
+        color: $text-colour;
+        text-align: center;
+        padding: 15px 26px;
+        text-decoration: none;
+      }
+      
+       a:hover:not(.active) {
+         transition: 1s;
+        background-color: $navactive;
+      }
+  }
+  
+  .active {
+    background-color: $navcolor;
+  }
+ }
+  
+ .btn {
+  background-color: $navcolor;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  transition: 1s;
+  background-color: $navactive;
+}
+ 
+ @media (max-width:990px){
+  h1{
+    margin-left: 0%;
+    margin-right: 0%;
+  } 
+}
+ 

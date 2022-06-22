@@ -1,0 +1,47 @@
+.section1{
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: rgba(61, 61, 61, 0.164);
+  margin-top: 5px;
+  padding: 15px 10px;
+
+  
+  .article1{
+    background: rgb(22,22,22);
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 15px 10px;
+  }
+
+  .selfie {
+  float: left;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  }
+
+  .selfie2 {
+    float: right;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    }
+}
+
+.foto {
+  width: 100%;
+  height: 70%;
+}
+
+.foto2 {
+  width: 100%;
+  height: 70%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+}
+
+@media (max-width:990px){
+  .section1{
+    margin-left: 0%;
+    margin-right: 0%;
+  } 
+}

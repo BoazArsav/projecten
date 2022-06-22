@@ -1,0 +1,7 @@
+User-agent: Googlebot
+Disallow: /noGooglebot/
+
+User-agent: *
+Allow: /
+
+Sitemap: http://localhost/frontend/sitemap.xml

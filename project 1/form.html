@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <title>Formulier</title>
+  <link rel="stylesheet" type="text/css" href="real.css">
+</head>
+
+<!--Header altijd hier zetten-->
+
+<body>
+  <header>
+    <header class="banner">
+      <h1>Formulier</h1>
+    </header>
+
+    <!--Navbar en Dropdownmenu's (waar active staat, is de optie in de menu donker gekleurd.)-->
+    <nav>
+      <ul>
+        <li> <a href="index.html" html>Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Opleiding</a>
+          <section class="dropdown-content">
+            <a href="uitlegop.html">Uitleg Opleiding</a>
+            <a href="vereistop.html">Vereisten Opleiding</a>
+            <a href="explan.html">Examen Plannen</a>
+            <a href="sstatuut.html">Studenten Statuut</a>
+          </section>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Vakken</a>
+          <section class="dropdown-content">
+            <a href="vakken.html">Rek / Ned / Eng</a>
+            <a href="burger.html">Burgerschap / SLOB</a>
+            <a href="Programmeren.html">Programmeren</a>
+            <a href="keuze.html">Keuzevakken</a>
+          </section>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Studiemiddelen</a>
+          <section class="dropdown-content">
+            <a href="eduarte.html">Eduarte</a>
+            <a href="lm.html">Learning Matters</a>
+            <a href="software.html">Software</a>
+            <a href="git.html">Github / Gitlab</a>
+          </section>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="foto.html">Foto</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" a href="form.html">Form</a></li>
+      </ul>
+    </nav>
+
+    <!--Alle tekst van Section en Article hier zetten-->
+    <!--Dit deed Pijn om werkent te krijgen-->
+    <main>
+      <section>
+        <h2>Dit is de Formulier!</h2>
+        <article>
+          <header>
+            <h3>Vul in A.U.B!</h3>
+          </header>
+          <form action="index.html" method="post">
+            <ul>
+              <li>
+                <label for="text">Voor en Achternaam</label>
+                <input id="text" type="text" name="name" autofocus required>
+              </li>
+
+              <li>
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" required>
+              </li>
+
+              <li>
+                <label for="tel">Telefoon Nummer</label>
+                <input id="tel" type="tel" name="tel" maxlength="10" pattern="[0-9]{10}" placeholder="06 nummer alleen"
+                  required>
+              </li>
+
+              <li>
+                <label for="checkbox">Hoe vond u mijn website?</label>
+                <fieldset>
+                  <label for="opt1"><input id="opt1" type="radio" name="mw" value="1">Slecht</label>
+                  <label for="opt2"><input id="opt2" type="radio" name="mw" value="1">Het is Oké</label>
+                  <label for="opt3"><input id="opt3" type="radio" name="mw" value="1">Goed genoeg</label>
+                </fieldset>
+              </li>
+
+              <li>
+                <label for="checkbox">Er zijn meerdere keuzes</label>
+                <fieldset id="checkbox">
+                  <legend>Wat heeft u geleerd?</legend>
+                  <label for="opt4">
+                    <input id="opt4" type="checkbox" name="Inhoud Opleiding" value="Inhoud">Inhoud van Opleiding</label>
+                  <label for="opt5">
+                    <input id="opt5" type="checkbox" name="Vakkenpakket" value="Inhoud">Inhoud van Vakkenpakket</label>
+                  <label for="opt6">
+                    <input id="opt6" type="checkbox" name="De Studiemiddelen" value="Inhoud">Onze Studiemiddelen</label>
+                  <label for="opt7">
+                    <input id="opt7" type="checkbox" name="De Schoollocaties" value="Inhoud">Onze
+                    Schoollocatie's</label>
+                </fieldset>
+              </li>
+              <li><label for="meest intressante onderwerp">Meest intressante onderwerp</label>
+                <select id="Onderwerp" name="Onderwerp">
+                  <optgroup label="Onderwerpen">
+                    <option value="...">Niks</option>
+                    <option value="De Opleidinginfo">Opleidinginfo</option>
+                    <option value="Examenplannen">Examenplannen</option>
+                    <option value="Studentenstatuut">Studentenstatuut</option>
+                    <option value="Onze Vakkenpakket">Vakkenpakket</option>
+                    <option value="Rooster">Rooster</option>
+                    <option value="Software">Onze Software</option>
+                    <option value="Git">Git</option>
+                  </optgroup>
+                </select>
+              </li>
+            </ul>
+            <input type="reset" value="Herstellen">
+            <input type="submit" value="Versturen">
+          </form>
+        </article>
+      </section>
+    </main>
+
+    <!--Aside staat hier en blijft hier-->
+    <aside>
+      <h2>Dan zijn wij klaar!</h2>
+      <p><br>Om dit te vieren, een mooie smiley voor jou!</p>
+      <img src="foto/cool.jpg" alt="cool" height="250" width="375">
+    </aside>
+
+    <!--De footer-->
+    <footer>
+      <p>Gemaakt door Boaz Arsav.</p>
+    </footer>
+
+
+</body>
+
+</html>
